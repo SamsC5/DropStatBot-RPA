@@ -1,0 +1,43 @@
+[
+
+   {
+
+      "facilityId":381,
+
+      "unitId":350,
+
+      "disciplineId":12451,
+
+      "numberOfStaff":1,
+
+      "shiftTag":"Day",
+
+      "shiftType":"8 hour",
+
+      "startDate":"2022-02-10",
+
+      "startTime":"19:0:00",
+
+      "endDate":"2022-02-11",
+
+      "endTime":"3:0:00",
+
+      "message":"{facility_name}/{unit_name}, needs staff on {startDate}, from {startTime} to {endTime} on {endDate}. Text back {ShiftID} if you are available to work. If accepting this shift will put you into overtime, Please text back T{ShiftID}",
+
+      "invitationType":3,
+
+      "isBonusPay":false,
+
+      "bonusAmount":0,
+
+      "isExcludeOvertime":true,
+
+      "isExcludeAgencyTier":true,
+
+      "bonusReason":"",
+
+      "isOvertimeShift":true
+
+  }
+
+]

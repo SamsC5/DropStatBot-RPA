@@ -1,0 +1,12 @@
+{
+"facilityId": 111,
+"unitId": 222,
+"disciplineId": 00000,
+"numberOfStaff": 0,
+"shiftTag": "Morning",
+"shiftType": "8 hours",
+"startDate": "2020-04-25",
+"startTime": "06:0:00",
+"endDate": "2020-04-25",
+"endTime": "14:00:00"
+}
