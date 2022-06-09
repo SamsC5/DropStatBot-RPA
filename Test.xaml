@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>969,1421</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>805,2283</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Test_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="28">
@@ -73,7 +73,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Test" sap:VirtualizedContainerService.HintSize="773,1356" sap2010:WorkflowViewState.IdRef="Sequence_15">
+  <Sequence DisplayName="Test" sap:VirtualizedContainerService.HintSize="773,2218" sap2010:WorkflowViewState.IdRef="Sequence_15">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="%[0-9].[0-9]" Name="RegExp" />
       <Variable x:TypeArguments="scg:IEnumerable(str:Match)" Name="MatchedValues" />
@@ -88,19 +88,19 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:Matches sap:VirtualizedContainerService.HintSize="731,59" sap2010:WorkflowViewState.IdRef="Matches_2" Input="[in_InputString]" IsBuilderTabModified="False" Pattern="[RegExp]" RegexOption="IgnoreCase, Multiline, Compiled" Result="[MatchedValues]" />
-    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="[Index]" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="731,526" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[MatchedValues]">
+    <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="[Index]" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="731,529" sap2010:WorkflowViewState.IdRef="ForEach`1_7" Values="[MatchedValues]">
       <ui:ForEach.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="item" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="695,402" sap2010:WorkflowViewState.IdRef="Sequence_12">
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="695,404" sap2010:WorkflowViewState.IdRef="Sequence_12">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <If Condition="[Index mod 2=0]" DisplayName="If-IndexBasedInsertion" sap:VirtualizedContainerService.HintSize="653,310" sap2010:WorkflowViewState.IdRef="If_2">
+            <If Condition="[Index mod 2=0]" DisplayName="If-IndexBasedInsertion" sap:VirtualizedContainerService.HintSize="653,312" sap2010:WorkflowViewState.IdRef="If_2">
               <If.Then>
                 <Sequence sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_10">
                   <sap:WorkflowViewStateService.ViewState>
@@ -142,26 +142,107 @@
         </ActivityAction>
       </ui:ForEach.Body>
     </ui:ForEach>
-    <Sequence sap:VirtualizedContainerService.HintSize="731,468" sap2010:WorkflowViewState.IdRef="Sequence_14">
+    <Sequence sap:VirtualizedContainerService.HintSize="731,1325" sap2010:WorkflowViewState.IdRef="Sequence_14">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="434,376" sap2010:WorkflowViewState.IdRef="ForEach`1_8" Values="[Enumerable.Range(0,FirstArray.Length)]">
+      <ui:ForEach x:TypeArguments="x:Int32" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="562,1233" sap2010:WorkflowViewState.IdRef="ForEach`1_8" Values="[Enumerable.Range(0,FirstArray.Length)]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="x:Int32">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Int32" Name="item" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="304,252" sap2010:WorkflowViewState.IdRef="Sequence_13">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,1108" sap2010:WorkflowViewState.IdRef="Sequence_13">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_16">
+              <If Condition="[FirstArray(item).Split(&quot;.&quot;C)(1).Contains(&quot;1&quot;) or FirstArray(item).Split(&quot;.&quot;C)(1).Contains(&quot;2&quot;) or FirstArray(item).Split(&quot;.&quot;C)(1).Contains(&quot;3&quot;) or FirstArray(item).Split(&quot;.&quot;C)(1).Contains(&quot;4&quot;) or FirstArray(item).Split(&quot;.&quot;C)(1).Contains(&quot;5&quot;) or FirstArray(item).Split(&quot;.&quot;C)(1).Contains(&quot;6&quot;) or FirstArray(item).Split(&quot;.&quot;C)(1).Contains(&quot;7&quot;) or FirstArray(item).Split(&quot;.&quot;C)(1).Contains(&quot;8&quot;) or FirstArray(item).Split(&quot;.&quot;C)(1).Contains(&quot;9&quot;)]" DisplayName="If-FirstArrayDesimalValueCheck" sap:VirtualizedContainerService.HintSize="484,342" sap2010:WorkflowViewState.IdRef="If_4">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_18">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[out_RequiredResource]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[(cint(FirstArray(item).Split("."C)(0))+1)-(CInt(SecondArray(item)))]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap:VirtualizedContainerService.HintSize="200,84" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+              <If Condition="[SecondArray(item).Split(&quot;.&quot;C)(1).Contains(&quot;1&quot;) or SecondArray(item).Split(&quot;.&quot;C)(1).Contains(&quot;2&quot;) or SecondArray(item).Split(&quot;.&quot;C)(1).Contains(&quot;3&quot;) or SecondArray(item).Split(&quot;.&quot;C)(1).Contains(&quot;4&quot;) or SecondArray(item).Split(&quot;.&quot;C)(1).Contains(&quot;5&quot;) or SecondArray(item).Split(&quot;.&quot;C)(1).Contains(&quot;6&quot;) or SecondArray(item).Split(&quot;.&quot;C)(1).Contains(&quot;7&quot;) or SecondArray(item).Split(&quot;.&quot;C)(1).Contains(&quot;8&quot;) or SecondArray(item).Split(&quot;.&quot;C)(1).Contains(&quot;9&quot;)]" DisplayName="If-Second Array Decimal ValueCheck" sap:VirtualizedContainerService.HintSize="484,342" sap2010:WorkflowViewState.IdRef="If_3">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_22">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[out_RequiredResource]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[(CInt(FirstArray(item))-(CInt(SecondArray(item).Split("."C)(0))+1))]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <Sequence sap:VirtualizedContainerService.HintSize="242,84" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </If.Else>
+              </If>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484,52" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_16">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[out_RequiredResource]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[(cint(FirstArray(item))-cint(SecondArray(item)))]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                  </Sequence>
+                </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:CommentOut>
+              <Assign sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="Assign_24">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Int32">[out_RequiredResource]</OutArgument>
                 </Assign.To>
@@ -169,7 +250,7 @@
                   <InArgument x:TypeArguments="x:Int32">[(cint(FirstArray(item))-cint(SecondArray(item)))]</InArgument>
                 </Assign.Value>
               </Assign>
-              <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_17">
+              <Assign sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="Assign_17">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Int32">[out_TotalRequiredResourse]</OutArgument>
                 </Assign.To>
@@ -182,6 +263,6 @@
         </ui:ForEach.Body>
       </ui:ForEach>
     </Sequence>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="731,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;The total required resource in Onshift Portal is &quot;+out_TotalRequiredResourse.ToString+&quot; at the shift ( &quot;+in_Shifts+&quot; ) in &quot;+in_Facility+&quot; .&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="731,93" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;The total required resource in Onshift Portal is &quot;+out_TotalRequiredResourse.ToString+&quot; at the shift ( &quot;+in_Shifts+&quot; ) in &quot;+in_Facility+&quot; .&quot;]" />
   </Sequence>
 </Activity>
